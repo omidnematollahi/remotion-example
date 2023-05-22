@@ -1,0 +1,28 @@
+.control {
+    width: 550px;
+
+    &__field {
+        padding-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        label {
+            font-size: 1.5rem;
+        }
+
+        input {
+            height: 38px;
+            border: 1px solid #9b9b9b;
+            border-radius: 0.5rem;
+            padding: .4rem 0.75rem;
+            font-size: 1rem;
+            outline: none;
+        }
+    }
+
+    &__video-color {
+        padding-top: 0.5rem;
+    }
+}

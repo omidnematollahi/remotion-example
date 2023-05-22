@@ -3,21 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import CarSlideshow from './remotion/CarSlideshow';
-import FontPicker from './remotion/FontPicker';
+import TextSlide from './components/remotion/TextSlide';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
   <React.StrictMode>
-    <FontPicker />
-	<h2>Player</h2>
-	<div className='wrapper'>
-		<App component={CarSlideshow} durationInFrames={500} />
-	</div>
-  </React.StrictMode>
+    <div className="wrapper">
+      <h2>Player</h2>
+      <App component={TextSlide} durationInFrames={500} />
+    </div>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
