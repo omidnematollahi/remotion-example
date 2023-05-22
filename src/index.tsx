@@ -3,11 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import {Thumbnail} from '@remotion/player';
 import CarSlideshow from './remotion/CarSlideshow';
-import {FontPicker} from './remotion/FontPicker';
-// import {ThumbnailDemo} from './remotion/ThumbnailDemo';
-// import {VideoAutoplayDemo} from './remotion/VideoAutoplayDemo';
+import FontPicker from './remotion/FontPicker';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,16 +13,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <FontPicker />
-			<h2>Player</h2>
-			<div
-				style={{
-					display: 'flex',
-					flexDirection: 'row',
-					justifyContent: 'center',
-				}}
-			>
-				<App component={CarSlideshow} durationInFrames={500} />
-			</div>
+	<h2>Player</h2>
+	<div className='wrapper'>
+		<App component={CarSlideshow} durationInFrames={500} />
+	</div>
   </React.StrictMode>
 );
 

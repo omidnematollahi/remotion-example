@@ -1,7 +1,7 @@
 import React from 'react';
 import {getAvailableFonts} from '@remotion/google-fonts';
 
-export const FontPicker: React.FC = () => {
+const FontPicker: React.FC = () => {
 	const newFonts = getAvailableFonts();
 
 	return (
@@ -38,3 +38,4 @@ export const FontPicker: React.FC = () => {
 		</div>
 	);
 };
+export default FontPicker
